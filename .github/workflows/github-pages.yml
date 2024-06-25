@@ -19,7 +19,7 @@ jobs:
         node-version: '14'  # Specify the Node.js version you need
 
     - name: Install dependencies  # Step to install project dependencies
-      run: npm install  # Runs npm install to install the project dependencies
+      run: npm ci  # Uses 'npm ci' for a clean and reliable installation of dependencies
 
     - name: Build the project  # Step to build the project
       run: npm run build  # Runs the build script to create the production build
