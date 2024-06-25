@@ -1,12 +1,12 @@
 import React from 'react';
 
-function About() {
+function about() {
   return (
     <section id="about">
       <h2>About Me</h2>
-      <p><!-- Your content here --></p>
+      <p>JHI</p>
     </section>
   );
 }
 
-export default About;
+export default about;

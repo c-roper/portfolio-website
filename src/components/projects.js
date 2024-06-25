@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Projects() {
+function projects() {
   return (
     <section id="projects">
       <h2>Projects</h2>
-      <p><!-- Your content here --></p>
+      <p>Your content here</p>
     </section>
   );
 }
 
-export default Projects;
+export default projects;

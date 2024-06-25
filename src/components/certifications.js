@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Certifications() {
+function certifications() {
   return (
     <section id="certifications">
       <h2>Certifications</h2>
-      <p><!-- Your content here --></p>
+      <p>Your content here</p>
     </section>
   );
 }
 
-export default Certifications;
+export default certifications;

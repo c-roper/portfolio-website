@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Certifications from './components/Certifications';
-import Contact from './components/Contact';
+import about from './components/about';
+import skills from './components/skills';
+import projects from './components/projects';
+import certifications from './components/certifications';
+import contact from './components/contact';
 
 function App() {
   return (
@@ -23,11 +23,11 @@ function App() {
       <section id="landing">
         <h1>Hi, my name is Caleb</h1>
       </section>
-      <About />
-      <Skills />
-      <Projects />
-      <Certifications />
-      <Contact />
+      <about />
+      <skills />
+      <projects />
+      <certifications />
+      <contact />
     </div>
   );
 }

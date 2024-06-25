@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Skills() {
+function skills() {
   return (
     <section id="skills">
       <h2>Skills</h2>
-      <p><!-- Your content here --></p>
+      <p>Your content here</p>
     </section>
   );
 }
 
-export default Skills;
+export default skills;
