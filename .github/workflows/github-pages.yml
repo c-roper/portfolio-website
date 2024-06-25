@@ -1,0 +1,31 @@
+name: Deploy to GitHub Pages  # This is the name of the workflow
+
+on:
+  push:
+    branches:
+      - main  # This specifies the branch that will trigger the workflow on push events
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # The job will run on the latest version of Ubuntu
+
+    steps:
+    - name: Checkout repository  # Step to check out the repository
+      uses: actions/checkout@v2  # Uses the checkout action to check out your repository
+
+    - name: Set up Node.js  # Step to set up Node.js
+      uses: actions/setup-node@v2  # Uses the setup-node action to set up a specified Node.js version
+      with:
+        node-version: '14'  # Specify the Node.js version you need
+
+    - name: Install dependencies  # Step to install project dependencies
+      run: npm install  # Runs npm install to install the project dependencies
+
+    - name: Build the project  # Step to build the project
+      run: npm run build  # Runs the build script to create the production build
+
+    - name: Deploy to GitHub Pages  # Step to deploy the project to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3  # Uses the gh-pages action to deploy to GitHub Pages
+      with:
+        github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}  # Uses the GitHub token for authentication
+        publish_dir: ./build  # Specifies the directory to publish (default for Create React App)
